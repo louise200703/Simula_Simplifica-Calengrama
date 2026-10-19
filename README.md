@@ -8,7 +8,7 @@
 <div align="center">🌐 Acesse o Calêngrama: 
 https://louise200703.github.io/Simula_Simplifica-Calengrama/</div>
 
-
+--
 
 ## Sobre o projeto
 
