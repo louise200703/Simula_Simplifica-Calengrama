@@ -3,10 +3,10 @@
   <h1>Calêngrama</h1>
   <p><strong>Seu calendário acadêmico, no seu ritmo.</strong></p>
   <p>Calendário acadêmico com planejamento personalizado de estudos, desenvolvido como projeto prático do Simula &amp; Simplifica.</p>
-  🌐 Acesse o Calêngrama: 
-(https://louise200703.github.io/Simula_Simplifica-Calengrama/)
 </div>
 
+🌐 **Acesse o Calêngrama:** 
+[Experimentar o sistema](https://louise200703.github.io/Simula_Simplifica-Calengrama/)
 ---
 
 ## Sobre o projeto
