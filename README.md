@@ -5,6 +5,9 @@
   <p>Calendário acadêmico com planejamento personalizado de estudos, desenvolvido como projeto prático do Simula &amp; Simplifica.</p>
 </div>
 
+🌐 Acesse o Calêngrama: [Experimentar o sistema](https://louise200703.github.io/Simula_Simplifica-Calengrama/)
+
+
 ---
 
 ## Sobre o projeto
@@ -67,78 +70,6 @@ O projeto utiliza regras e algoritmos de planejamento. **A geração do cronogra
 
 A aplicação não exige framework, backend, conta de usuário ou serviço externo para suas funcionalidades principais.
 
-## Como executar localmente
-
-### Opção 1: Visual Studio Code e Live Server
-
-1. Baixe ou clone este repositório.
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Instale a extensão **Live Server**, caso ainda não esteja instalada.
-4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
-5. A aplicação será aberta no navegador.
-
-### Opção 2: servidor local com Python
-
-Com Python instalado, abra um terminal na pasta que contém `index.html` e execute:
-
-```bash
-python -m http.server 8000
-```
-
-Depois, acesse `http://localhost:8000` no navegador.
-
-Após abrir a aplicação, cadastre disciplinas e seus conteúdos, configure os horários na seção **Rotina e horários**, adicione trabalhos ou projetos e selecione **Gerar cronograma**.
-
-## Estrutura do projeto
-
-```text
-./
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   ├── app.js
-│   ├── storage.js
-│   └── planner.js
-├── assets/
-│   └── calendula.png
-├── tests/
-│   └── planner-regression.test.cjs
-└── README.md
-```
-
-| Arquivo | Responsabilidade |
-|---|---|
-| `index.html` | Estrutura semântica e navegação principal. |
-| `css/style.css` | Aparência, layout, componentes e responsividade. |
-| `js/app.js` | Eventos, formulários e atualização da interface. |
-| `js/storage.js` | Persistência local e identificadores dos registros. |
-| `js/planner.js` | Distribuição das sessões, dependências e validações do cronograma. |
-| `assets/calendula.png` | Logo floral utilizada na interface e como favicon. |
-| `tests/planner-regression.test.cjs` | Testes automatizados das principais regras do algoritmo. |
-
-## Executar os testes
-
-É necessário ter o [Node.js](https://nodejs.org/) instalado. No terminal, com a pasta do projeto aberta, execute:
-
-```bash
-node tests/planner-regression.test.cjs
-```
-
-Os testes verificam regras como a ordem das aulas, pré-requisitos de trabalhos, sequência das etapas de projetos, limites de disciplinas mescladas (de 1 a 5 disciplinas), disciplinas exclusivas, atualização dinâmica dos títulos, uso de horários livres além da meta diária e a distinção entre concluir uma sessão e concluir a atividade inteira. Também verificam que sessões concluídas são preservadas e não geram sobreposição com novos horários.
-
-## Publicar com GitHub Pages
-
-Como o Calêngrama é uma aplicação estática, pode ser publicado usando o GitHub Pages:
-
-1. Envie os arquivos e pastas do projeto para a raiz do repositório, mantendo a estrutura mostrada acima.
-2. Abra **Settings** no repositório do GitHub.
-3. Entre em **Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch principal (normalmente `main`) e a pasta `/(root)`, depois salve.
-6. Aguarde a publicação e utilize o endereço informado na seção Pages.
-
-Como a aplicação salva dados no navegador, cada visitante terá seus próprios registros locais. A publicação do site não cria sincronização entre dispositivos.
 
 ## Limitações e cuidados
 
