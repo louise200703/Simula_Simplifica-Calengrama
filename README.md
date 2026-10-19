@@ -64,79 +64,6 @@ O projeto utiliza regras e algoritmos de planejamento. **A geração do cronogra
 
 A aplicação não exige framework, backend, conta de usuário ou serviço externo para suas funcionalidades principais.
 
-## Como executar localmente
-
-### Opção 1: Visual Studio Code e Live Server
-
-1. Baixe ou clone este repositório.
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Instale a extensão **Live Server**, caso ainda não esteja instalada.
-4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
-5. A aplicação será aberta no navegador.
-
-### Opção 2: servidor local com Python
-
-Com Python instalado, abra um terminal na pasta que contém `index.html` e execute:
-
-```bash
-python -m http.server 8000
-```
-
-Depois, acesse `http://localhost:8000` no navegador.
-
-Após abrir a aplicação, cadastre disciplinas e seus conteúdos, configure os horários na seção **Rotina e horários**, adicione trabalhos ou projetos e selecione **Gerar cronograma**.
-
-## Estrutura do projeto
-
-```text
-./
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   ├── app.js
-│   ├── storage.js
-│   └── planner.js
-├── assets/
-│   └── calendula.png
-├── tests/
-│   └── planner-regression.test.cjs
-└── README.md
-```
-
-| Arquivo | Responsabilidade |
-|---|---|
-| `index.html` | Estrutura semântica e navegação principal. |
-| `css/style.css` | Aparência, layout, componentes e responsividade. |
-| `js/app.js` | Eventos, formulários e atualização da interface. |
-| `js/storage.js` | Persistência local e identificadores dos registros. |
-| `js/planner.js` | Distribuição das sessões, dependências e validações do cronograma. |
-| `assets/calendula.png` | Logo floral utilizada na interface e como favicon. |
-| `tests/planner-regression.test.cjs` | Testes automatizados das principais regras do algoritmo. |
-
-## Executar os testes
-
-É necessário ter o [Node.js](https://nodejs.org/) instalado. No terminal, com a pasta do projeto aberta, execute:
-
-```bash
-node tests/planner-regression.test.cjs
-```
-
-Os testes verificam regras como a ordem das aulas, pré-requisitos de trabalhos, sequência das etapas de projetos, limites de disciplinas mescladas (de 1 a 5 disciplinas), disciplinas exclusivas, atualização dinâmica dos títulos e uso de horários livres além da meta diária quando a capacidade normal não basta para cumprir um prazo.
-
-## Publicar com GitHub Pages
-
-Como o Calêngrama é uma aplicação estática, pode ser publicado usando o GitHub Pages:
-
-1. Envie os arquivos e pastas do projeto para a raiz do repositório, mantendo a estrutura mostrada acima.
-2. Abra **Settings** no repositório do GitHub.
-3. Entre em **Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch principal (normalmente `main`) e a pasta `/(root)`, depois salve.
-6. Aguarde a publicação e utilize o endereço informado na seção Pages.
-
-Como a aplicação salva dados no navegador, cada visitante terá seus próprios registros locais. A publicação do site não cria sincronização entre dispositivos.
-
 ## Limitações e cuidados
 
 - Os dados são armazenados no `LocalStorage` do navegador. Eles não são enviados para uma conta ou banco de dados remoto e não são sincronizados automaticamente entre dispositivos.
@@ -148,7 +75,7 @@ Como a aplicação salva dados no navegador, cada visitante terá seus próprios
 
 ## Autoria e apoio no desenvolvimento
 
-Desenvolvi o **Calêngrama** como projeto prático do **Simula & Simplifica**, com apoio do **ChatGPT** na elaboração, implementação e revisão de partes do código, na investigação de erros e na preparação dos testes. Os requisitos, as prioridades e a direção do projeto foram definidos e refinados ao longo do desenvolvimento, e as funcionalidades precisam ser verificadas na prática antes da entrega final.
+O **Calêngrama** foi desenvolvido como projeto prático do **Simula & Simplifica**, com apoio do **ChatGPT** na elaboração, implementação e revisão de partes do código, na investigação de erros e na preparação dos testes. Os requisitos, as prioridades e a direção do projeto foram definidos e refinados ao longo do desenvolvimento, e as funcionalidades precisam ser verificadas na prática antes da entrega final.
 
 O cronograma utiliza regras e algoritmos tradicionais; o uso do ChatGPT como apoio durante o desenvolvimento não significa que a aplicação gere rotinas por meio de inteligência artificial.
 
