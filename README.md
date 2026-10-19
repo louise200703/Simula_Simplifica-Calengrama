@@ -9,6 +9,7 @@
 https://louise200703.github.io/Simula_Simplifica-Calengrama/</div>
 
 
+
 ## Sobre o projeto
 
 Conciliar disciplinas, aulas, exercícios, trabalhos e prazos pode transformar o planejamento do semestre em uma tarefa por si só. O **Calêngrama** foi pensado para ajudar estudantes a organizar essas atividades em um calendário de estudos ajustado à própria rotina.
