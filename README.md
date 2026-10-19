@@ -5,8 +5,8 @@
   <p>Calendário acadêmico com planejamento personalizado de estudos, desenvolvido como projeto prático do Simula &amp; Simplifica.</p>
 </div>
 
-<div align="center">🌐 **Acesse o Calêngrama:** 
-[Experimentar o sistema](https://louise200703.github.io/Simula_Simplifica-Calengrama/)</div>
+<div align="center">🌐 Acesse o Calêngrama: 
+https://louise200703.github.io/Simula_Simplifica-Calengrama/</div>
 ---
 
 ## Sobre o projeto
